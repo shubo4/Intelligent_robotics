@@ -1,0 +1,60 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.47625637186703107 0.03576847939122347 0.8785786727084216 3.0767169964187957
+  position 1.8514600149363165 0.16862275845785213 3.139579110759979
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+Wall {
+  translation 0.577617 0.109115 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(2)"
+  size 0.4 0.2 0.1
+}
+Wall {
+  translation -0.092383 0.699115 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(4)"
+  size 0.4 0.2 0.1
+}
+Wall {
+  translation -0.212383 -0.200885 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(1)"
+  size 0.4 0.2 0.1
+}
+Wall {
+  translation 0.257617 0.249115 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(3)"
+  size 0.6 0.1 0.1
+}
+WoodenBox {
+  translation -0.06 0.22 0.02
+  size 0.05 0.05 0.05
+}
+E-puck {
+  translation 0.819947 0.12951 -0.000540014
+  rotation 0.0003444852413442403 -2.1238525648537022e-05 0.99999994043942 2.992648813950029
+  controller "bug_2_new"
+  distance_sensor_numberOfRays 3
+  turretSlot [
+    GPS {
+    }
+  ]
+}

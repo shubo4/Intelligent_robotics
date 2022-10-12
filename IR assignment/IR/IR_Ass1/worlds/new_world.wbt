@@ -1,0 +1,70 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/obstacles/protos/OilBarrel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.090533864139106 -0.9910939372907778 -0.09765463076324615 5.705144849857458
+  position -4.065577833883617 -0.48175887707853177 1.8634676354906237
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  contactMaterial ""
+  floorSize 3 3
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+OilBarrel {
+  translation -0.16 -0.7 0.05
+  height 0.09
+  radius 0.05
+}
+Wall {
+  translation 0 0 0.03
+  rotation 1 0 0 1.55
+  size 1 0.1 0.1
+}
+Wall {
+  translation 0 0.7 0.03
+  rotation 1 0 0 1.55
+  name "wall(1)"
+  size 1 0.1 0.1
+}
+Wall {
+  translation 0 -0.8 0.03
+  rotation 1 0 0 1.55
+  name "wall(2)"
+  size 1 0.1 0.1
+}
+Wall {
+  translation 0 -0.1 0.001
+  rotation 0 0 1 1.55
+  name "wall(3)"
+  size 1 0.1 0.1
+}
+E-puck {
+  hidden position_0_0 314.1823585526485
+  hidden position_0_1 350.25482554883405
+  hidden linearVelocity_0 -1.440753350663716e-05 -7.220575298720741e-05 1.8716836428237143e-06
+  hidden angularVelocity_0 0.004732015440881424 0.0016644498136031056 -0.8990991480148056
+  hidden rotation_1 0 1 0 0.023093193669180296
+  hidden rotation_2 0 -1 0 1.603551653222794
+  translation -1.3130699075370293 -0.20913980246158684 -6.71997653138856e-05
+  rotation -0.00020337522977569624 -0.00027538690148585935 -0.9999999414002836 1.2627628330414487
+  controller "follow_object"
+  turretSlot [
+    GPS {
+    }
+  ]
+}

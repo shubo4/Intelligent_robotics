@@ -1,0 +1,1 @@
+Please select bug2.py controller for the epuck and run the environment IR.py 
